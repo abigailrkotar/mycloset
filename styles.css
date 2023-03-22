@@ -4,6 +4,7 @@ body
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color:saddlebrown;
     margin: 2vh;
+    text-align: center;
 }
 
 #content-area
@@ -18,7 +19,6 @@ header
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: brown;
     background-color: antiquewhite;
-    text-align: center;
     padding: 0.05%;
 }
 
@@ -27,10 +27,6 @@ fieldset img
     max-width: 200px;
 }
 
-form
-{
-    text-align: center;
-}
 label
 {
     display: flex;
@@ -41,7 +37,6 @@ fieldset
     display: flex;
     flex-direction: row;
     justify-content: center;
-    text-align: center;
     padding: 5vh;
 }
 
@@ -82,4 +77,13 @@ fieldset
 {
     height: 500px;
     
+}
+
+#next-butt
+{
+    color:white;
+    font-size: larger;
+    background-color: midnightblue;
+    padding: 1vh; 
+    text-decoration:none;
 }

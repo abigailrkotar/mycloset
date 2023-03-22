@@ -7,7 +7,41 @@
         <link href="styles.css" type="text/css" rel="stylesheet">
     </head>
     <body>
-        
+        <div id="content-area">
+
+            <header>
+                <h1>Welcome to Your Closet</h1>
+            </header>
+
+            <body>
+                <h1>Complete the Style Quiz to get started!</h1>
+                
+                <form id="styles" name="style-quiz" method="post">
+                    <fieldset id="shoes-set">
+                        <legend>What are your go to shoes?</legend>
+                        <img src="images/air-force-basic.jpeg" alt="white and beige air force sneakers"> 
+                        <label for="basic-1">Air Forces</label>
+                        <input id="basic-1" name="shoes" type="radio" > 
+
+                        <img src="images/mary-jane-artsy.jpeg" alt ="brown pair of Mary Jane shoes">
+                        <label for="artsy-1">Mary Janes</label>
+                        <input id="artsy-1" name="shoes" type="radio">
+
+                        <img src="images/ballet-flats.jpeg" alt="blue jeans with a pair of silver ballet flats">
+                        <label for="ballet-1">Ballet Flats</label>
+                        <input id="ballet-1" name="shoes" type="radio">
+
+                        <img src="images/docs-grunge.jpeg" alt="black doc marten boots">
+                        <label for="grunge-1">Doc Martens</label>
+                        <input id="grunge-1" name="shoes" type="radio">
+
+                        <img src="images/sneakers-street.jpeg" alt="dark gray and brown chunky sneakers">
+                        <label for="street-1">Chunky Sneakers</label>
+                        <input id="street-1" name="shoes" type="radio">
+                    </fieldset>
+                </form>
+            </body>
+        </div>
         <script src="main.js"></script>
     </body>
 </html>

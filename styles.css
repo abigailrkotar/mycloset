@@ -65,10 +65,17 @@ fieldset
 {
     color: darkred;
 }
+
+#street h1
+{
+    color: slategray
+}
+
 #ballet, #basic, #artsy, #grunge, #street
 {
     text-align: center; 
     font-size: larger;
+    color: black; 
     
 }
 #ballet img, #basic img, #artsy img, #grunge img, #street img

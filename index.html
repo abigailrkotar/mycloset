@@ -21,46 +21,46 @@
                         <legend>What are your go to shoes?</legend>
                         <img src="images/air-force-basic.jpeg" alt="white and beige air force sneakers"> 
                         <label for="basic-1">Air Forces</label>
-                        <input id="basic-1" name="shoes" type="radio"> 
+                        <input id="basic-1" name="shoes" type="radio" value="basic" required> 
 
                         <img src="images/mary-jane-artsy.jpeg" alt ="brown pair of Mary Jane shoes">
                         <label for="artsy-1">Mary Janes</label>
-                        <input id="artsy-1" name="shoes" type="radio">
+                        <input id="artsy-1" name="shoes" type="radio" value="artsy">
 
                         <img src="images/ballet-flats.jpeg" alt="blue jeans with a pair of silver ballet flats">
                         <label for="ballet-1">Ballet Flats</label>
-                        <input id="ballet-1" name="shoes" type="radio">
+                        <input id="ballet-1" name="shoes" type="radio" value="ballet">
 
                         <img src="images/docs-grunge.jpeg" alt="black doc marten boots">
                         <label for="grunge-1">Doc Martens</label>
-                        <input id="grunge-1" name="shoes" type="radio">
+                        <input id="grunge-1" name="shoes" type="radio" value ="grunge">
 
                         <img src="images/sneakers-street.jpeg" alt="dark gray and brown chunky sneakers">
                         <label for="street-1">Chunky Sneakers</label>
-                        <input id="street-1" name="shoes" type="radio">
+                        <input id="street-1" name="shoes" type="radio" value="street">
                     </fieldset>
 
                     <fieldset id="bottoms-set">
                         <legend>Which style bottoms do you wear most often?</legend>
                         <img src="images/cargo-grunge.jpeg" alt="green cargo pants with metal belt and black graphic shirt">
                         <label for="grunge-2">Baggy cargo pants</label>
-                        <input id="grunge-2" group="pants" type="radio">
+                        <input id="grunge-2" group="pants" type="radio" value="grunge" required>
 
                         <img src="images/jeans-basic.jpeg" alt="blue jeans with white shoes">
                         <label for="basic-2">Blue jeans</label>
-                        <input id="basic-2" group="pants" type="radio">
+                        <input id="basic-2" group="pants" type="radio" value="basic">
 
                         <img src="images/parachute-street.jpeg" alt="gray baggy parachute pants">
                         <label for="street-2">Parachute pants</label>
-                        <input id="street-2" group="pants" type="radio">
+                        <input id="street-2" group="pants" type="radio" value="street">
 
                         <img src="images/skirt-artsy.jpeg" alt="green maxi skirt with black patterns">
                         <label for="artsy-2">a patterned maxi-skirt</label>
-                        <input id="artsy-2" group="pants" type="radio">
+                        <input id="artsy-2" group="pants" type="radio" value="artsy">
 
                         <img src="images/skirt-ballet.jpeg" alt="satin black wrap skirt with black top">
                         <label for="ballet-2">a simple mini skirt</label>
-                        <input id="ballet-2" group="pants" type="radio">
+                        <input id="ballet-2" group="pants" type="radio" value="ballet">
 
                     </fieldset>
 
@@ -68,47 +68,66 @@
                         <legend>Which top suits your style?</legend>
                         <img src="images/artsy-top.jpeg" alt="green patterned mesh flowy top">
                         <label for="artsy-3">a mesh flowy top</label>
-                        <input id="artsy-3" group="tops" type="radio">
+                        <input id="artsy-3" group="top" type="radio" value="artsy" required>
 
                         <img src="images/ballet-top.jpeg" alt="white lacy corset style top">
                         <label for="ballet-3">a lacy top</label>
-                        <input id="ballet-3" group="top" type="radio">
+                        <input id="ballet-3" group="top" type="radio" value="ballet">
 
                         <img src="images/basic-top.jpeg" alt="simple long sleeve brown top">
                         <label for="basic-3">a solid top</label>
-                        <input id="basic-3" group="top" type="radio">
+                        <input id="basic-3" group="top" type="radio" value="basic">
 
                         <img src="images/grunge-top.jpeg" alt="black patterned long sleeve top">
                         <label for="grunge-3">a funky patterned top</label>
-                        <input id="grunge-3" group="top" type="radio">
+                        <input id="grunge-3" group="top" type="radio" value="grunge">
 
                         <img src="images/street-top.jpeg" alt="white tank top with a black star">
                         <label for="street-3">a simple graphic tee</label>
-                        <input id="street-3" group="top" type="radio">
+                        <input id="street-3" group="top" type="radio" value="street">
                     </fieldset>
 
                     <fieldset id="access">
                         <legend>Choose an accessory for your outfit!</legend>
                         <img src="images/bomber-jacket.jpeg" alt="teal bomber jacket">
                         <label for="street-4">a bomber jacket</label>
-                        <input id="street-4" group="accessory" type="radio">
+                        <input id="street-4" group="accessory" type="radio" value="street" required>
 
                         <img src="images/crochet-caradign.jpeg" alt="cream crochet caradign">
                         <label for="artsy-4">a crochet caradign</label>
-                        <input id="artsy-4" group="accessory" type="radio">
+                        <input id="artsy-4" group="accessory" type="radio" value="artsy">
 
                         <img src="images/gold-hoops.jpeg" alt="multiple gold hoop earrings">
                         <label for="basic-4">gold hoops</label>
-                        <input id="basic-4" group="accessory" type="radio">
+                        <input id="basic-4" group="accessory" type="radio" value="basic">
 
                         <img src="images/leg-warmers.jpeg" alt="light gray leg warmers">
                         <label for="ballet-4">leg warmers</label>
-                        <input id="ballet-4" group="accessory" type="radio">
+                        <input id="ballet-4" group="accessory" type="radio" value="ballet">
 
                         <img src="images/rings.jpeg" alt="multiple silver rings">
                         <label for="grunge-4">loads of rings</label>
-                        <input id="grunge-4" group="accessory" type="radio">
+                        <input id="grunge-4" group="accessory" type="radio" value="grunge">
+
+                    </fieldset>
+
+                    <fieldset id="full-outfit">
+                        <legend>Finally, choose a full outfit you would wear!</legend>
                         
+                        <label for="artsy-5"><img src="images/artsy-fit.jpeg" alt="woman in green sweater with red collar, mustard skirt, with red boots"></label>
+                        <input id="artsy-5" group="outfit" type="radio" value="artsy" required>
+
+                        <label for="ballet-5"><img src="images/ballet-fit.jpeg" alt="woman in pink wrap caradign with light pink tank top, cargo mini skirt, pink leg warmers and white sneakers"></label>
+                        <input id="ballet-5" group="outfit" type="radio" value="ballet">
+
+                        <label for="basic-5"><img src="images/basic-fit.jpeg" alt="woman with long brown hair in two braids, a white tank top, brown caradign, blue jeans, and white converse"></label>
+                        <input id="basic-5" group="outfit" type="radio" value="basic">
+
+                        <label for="grunge-5"><img src="images/grunge-fit.jpeg" alt="woman in white headphones, a gray graphic t-shirt, a black mini skirt, and tall knee high black boots"></label>
+                        <input id="grunge-5" group="outfit" type="radio" value="grunge">
+
+                        <label for="street-5"><img src="images/street-fit.jpeg" alt="woman in an unbuttoned brown dress skirt with a brown tube top, brown cargo pants, and white and brown nike air force sneakers"></label>
+                        <input id="street-5" group="outfit" type="radio" value="street">
                     </fieldset>
                 </form>
             </body>

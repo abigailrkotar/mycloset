@@ -1,5 +1,5 @@
 document.getElementById("submit").addEventListener("click", event => {
-    event.preventDefault(); 
+    //event.preventDefault(); 
 
     let stylechoices = [0, 0, 0, 0, 0];
     let styles = ["ballet", "basic", "artsy", "grunge", "street"];
@@ -127,7 +127,13 @@ document.getElementById("submit").addEventListener("click", event => {
             gindex = i; 
         }
     }
-
+    localStorage.setItem("mC.style", styles[gindex]); 
     console.log(styles[gindex] + ": " + greatest); 
-
 })
+
+
+if(localStorage.getItem("mC.style")!== null)
+{
+    document.getElementById("styles").style.display = 'none'; 
+    
+}

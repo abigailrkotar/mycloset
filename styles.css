@@ -60,6 +60,11 @@ fieldset
 {
     color: darkgreen; 
 }
+
+#grunge h1
+{
+    color: darkred;
+}
 #ballet, #basic, #artsy, #grunge, #street
 {
     text-align: center; 

@@ -44,3 +44,19 @@ fieldset
     text-align: center;
     padding: 5vh;
 }
+
+#ballet h1
+{
+    color: pink;
+
+}
+
+#basic h1
+{
+    color: navy; 
+}
+
+#ballet, #basic, #artsy, #grunge, #street
+{
+    text-align: center; 
+}

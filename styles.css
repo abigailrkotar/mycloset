@@ -56,7 +56,18 @@ fieldset
     color: navy; 
 }
 
+#artsy h1
+{
+    color: darkgreen; 
+}
 #ballet, #basic, #artsy, #grunge, #street
 {
     text-align: center; 
+    font-size: larger;
+    
+}
+#ballet img, #basic img, #artsy img, #grunge img, #street img
+{
+    height: 500px;
+    
 }

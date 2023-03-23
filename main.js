@@ -137,10 +137,12 @@ document.getElementById("grunge").style.display = 'none';
 document.getElementById("artsy").style.display = 'none';
 document.getElementById("street").style.display = 'none';
 document.getElementById("next-butt").style.display = 'none';
+document.getElementById("main-nav").style.display='none';
 
 if(localStorage.getItem("mC.style")!== null)
 {
     document.getElementById("styles").style.display = 'none'; 
     document.getElementById(localStorage.getItem("mC.style")).style.display = 'block';
     document.getElementById("next-butt").style.display = 'block'; 
+    document.getElementById("main-nav").style.display= 'block';
 }

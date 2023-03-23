@@ -1,4 +1,3 @@
-
 let clothes = JSON.parse(localStorage.getItem("mC.items"));
 let buttons = []; 
 for(let i =0; i < clothes.length; i++)
@@ -14,7 +13,7 @@ for(let i =0; i < clothes.length; i++)
     buttons.push(button); 
 }
 
-let curroutfit = [];; 
+let curroutfit = [];
 
 for(let i = 0; i < buttons.length; i++)
 {
@@ -40,20 +39,24 @@ for(let i = 0; i < buttons.length; i++)
 
 document.getElementById("love").addEventListener("click", () => {
     event.preventDefault(); 
-    if(localStorage.getItem("mC.outfits") === null)
+    let outfits; 
+    if(localStorage.getItem("mC.outfits") === null || localStorage.getItem("mC.outfits") === "")
     {
-        console.log(curroutfit);
-        localStorage.setItem("mC.outfits", JSON.stringify(curroutfit)); 
+        outfits = [];
     }
     else
     {
-        let outfits = [];
-        outfits.push(JSON.parse(localStorage.getItem("mC.outfits")));
-        console.log(outfits); 
-        outfits.push(curroutfit); 
-        console.log(outfits); 
-        localStorage.setItem("mC.outfits", JSON.stringify(outfits)); 
+        outfits = [];
+        let pasto = (JSON.parse(localStorage.getItem("mC.outfits")));
+        for(let i =0; i < pasto.length; i++)
+        {
+            outfits.push(pasto[i]);
+        }
+        console.log(outfits);
     }
+    outfits.push(curroutfit); 
+    console.log(outfits); 
+    localStorage.setItem("mC.outfits", JSON.stringify(outfits)); 
     curroutfit = []; 
     window.location.reload(); 
 })
@@ -61,4 +64,28 @@ document.getElementById("love").addEventListener("click", () => {
 document.getElementById("scrap").addEventListener("click", () => {
     curroutfit = []; 
     window.location.reload(); 
+})
+
+
+if(!( localStorage.getItem("mC.outfits") === null))
+{
+    let pastouts = JSON.parse(localStorage.getItem("mC.outfits")); 
+    for(let o =0; o < pastouts.length; o++)
+    {
+        text = document.createElement("h3");
+        text.innerHTML = "Outfit " + (o +1); 
+        document.getElementById("past-outfits").appendChild(text);
+        for(let i =0; i < pastouts[o].length; i++)
+        {
+            img = document.createElement("img");
+            img.src = pastouts[o][i];
+            document.getElementById("past-outfits").appendChild(img); 
+        }
+    }
+}
+
+
+document.getElementById("clear-past").addEventListener('click', () => {
+    localStorage.setItem("mC.outfits", "");
+    window.location.reload();
 })

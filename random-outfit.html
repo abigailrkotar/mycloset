@@ -7,35 +7,39 @@
         <link href="styles.css" type="text/css" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <h1>Your Closet: Outfit Generator</h1>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="index.html">My Style</a></li>
-                <li><a href="closet.html">My Closet</a></li>
-                <li><a href="random-outfit.html">Outfit Generator</a></li>
-            </ul>
-        </nav>
-
-        <h2>Need Help Creating Your Next Outfit?</h2>
-        <p>Simply click on any item in your closet to add it to an outfit!</p>
-        <h3>Current Outfit</h3>
-        <div id="two-buttons">
-            <input id="love" type="submit" value="Love!">
-            <input id="scrap" type="submit" value="Scrap!!"> 
+        <div id="content-area1">
+            <header id="header-outfit">
+                <h1>Your Closet: Outfit Generator</h1>
+            </header>
+            <nav id="outfit-nav">
+                <ul>
+                    <li><a href="index.html">My Style</a></li>
+                    <li><a href="closet.html">My Closet</a></li>
+                    <li><a href="random-outfit.html">Outfit Generator</a></li>
+                </ul>
+            </nav>
+    
+            <div id="two-buttons">
+                <h1>Need Help Creating Your Next Outfit?</h1>
+                <p>Simply click on any item in your closet to add it to an outfit!</p>
+                <input id="love" type="submit" value="Love!">
+                <input id="scrap" type="submit" value="Scrap!!"> 
+            </div>
+            <div id="outfit">
+                <h2>Current Outfit</h2>
+            </div>
+            
+            <div id="clothes">
+            <h2>Your Clothes</h2> 
+    
+            </div>
+    
+            
+            <div id="past-outfits">
+                <h2>Past Outfits</h2>
+                <input id="clear-past" type="submit" value="clear">
+            </div>
         </div>
-        <div id="outfit">
-
-        </div>
-        
-        
-        <h3>Your Clothes</h3> 
-        <div id="clothes">
-
-        </div>
-
-        
         
         <script src="outfit.js"></script>
     </body>

@@ -1,6 +1,12 @@
-document.getElementById("submit").addEventListener("click", event => {
-    //event.preventDefault(); 
+/**
+ * when submit button is clicked, checks 
+ * what the user answered
+ * and creates then finds the highest style score
+ */
 
+document.getElementById("submit").addEventListener("click", event => {
+
+    // these arrays work together to compute the highest style
     let stylechoices = [0, 0, 0, 0, 0];
     let styles = ["ballet", "basic", "artsy", "grunge", "street"];
 
@@ -111,11 +117,6 @@ document.getElementById("submit").addEventListener("click", event => {
         stylechoices[4]++;
     }
     
-    for(let i =0; i < styles.length; i++)
-    {
-        console.log(styles[i] + ": " + stylechoices[i]); 
-    }
-    
 
     let greatest = stylechoices[0]; 
     let gindex = 0; 
@@ -127,10 +128,12 @@ document.getElementById("submit").addEventListener("click", event => {
             gindex = i; 
         }
     }
+    // saves style to local storage 
     localStorage.setItem("mC.style", styles[gindex]); 
-    console.log(styles[gindex] + ": " + greatest); 
+    //console.log(styles[gindex] + ": " + greatest); 
 })
 
+// hides all final pages
 document.getElementById("ballet").style.display = 'none';
 document.getElementById("basic").style.display = 'none';
 document.getElementById("grunge").style.display = 'none';
@@ -140,7 +143,7 @@ document.getElementById("next-butt").style.display = 'none';
 document.getElementById("main-nav").style.display='none';
 
 
-
+// if the user has a style, display that style page
 if(localStorage.getItem("mC.style")!== null)
 {
     document.getElementById("styles").style.display = 'none'; 

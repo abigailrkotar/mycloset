@@ -1,5 +1,6 @@
 let clothes = JSON.parse(localStorage.getItem("mC.items"));
 let buttons = []; 
+
 for(let i =0; i < clothes.length; i++)
 {
     img = document.createElement("img");

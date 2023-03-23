@@ -162,3 +162,11 @@ nav li:hover{
 {
     width: 200px; 
 }
+
+input 
+{
+    background-color: brown;
+    color: white;
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

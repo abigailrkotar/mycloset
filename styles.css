@@ -74,7 +74,7 @@ fieldset
     color: black; 
     
 }
-#ballet img, #basic img, #artsy img, #grunge img, #street img, #ballet-items img, #basic-items img, #grunge-items img, #artsy-items img, #street-items img, #big-closet img
+#ballet img, #basic img, #artsy img, #grunge img, #street img, #ballet-items img, #basic-items img, #grunge-items img, #artsy-items img, #street-items img, #big-closet img, #clothes img, #outfit img
 {
     height: 500px;
     
@@ -121,10 +121,15 @@ nav li:hover{
     margin: 5%;
 }
 
-#closet
+#closet, #clothes, #outfit
 {
     padding: 2%;
     outline-style: solid;
     outline-color: black;
     outline-width: 0.5em;
+}
+
+#two-buttons
+{
+    padding: 2%;
 }

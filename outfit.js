@@ -1,11 +1,12 @@
 let clothes = JSON.parse(localStorage.getItem("mC.items"));
 let buttons = []; 
 
+// if there are clothes in the user's closet, display them as clickable buttons 
 for(let i =0; i < clothes.length; i++)
 {
     img = document.createElement("img");
     img.src = clothes[i]; 
-    //document.getElementById("clothes").appendChild(this.img);
+    
     let button = document.createElement("input");
     button.setAttribute('type', 'image');
     button.setAttribute('id', img.src);
@@ -14,8 +15,13 @@ for(let i =0; i < clothes.length; i++)
     buttons.push(button); 
 }
 
+// empty outfit for the user to create
 let curroutfit = [];
 
+/**
+ * for each button, adds an on click listener that 
+ * moves the image out of the clothes section and into the outfit section 
+ * */ 
 for(let i = 0; i < buttons.length; i++)
 {
     document.getElementById("clothes").appendChild(buttons[i]);
@@ -38,6 +44,9 @@ for(let i = 0; i < buttons.length; i++)
 
 }
 
+// on click for the love button, saves the outfit in local storage, 
+// clears the current outfit, and 
+// reloads the page so the user can start a new outfit
 document.getElementById("love").addEventListener("click", () => {
     event.preventDefault(); 
     let outfits; 
@@ -62,12 +71,17 @@ document.getElementById("love").addEventListener("click", () => {
     window.location.reload(); 
 })
 
+// scrap button just reloads the page to get move all images back to clothes
 document.getElementById("scrap").addEventListener("click", () => {
     curroutfit = []; 
     window.location.reload(); 
 })
 
-
+/**
+ * if the user has saved outfits, 
+ * display them by creating a heading for each outfit
+ * and then displaying each item image 
+ */
 if(!( localStorage.getItem("mC.outfits") === null))
 {
     let pastouts = JSON.parse(localStorage.getItem("mC.outfits")); 
@@ -85,7 +99,7 @@ if(!( localStorage.getItem("mC.outfits") === null))
     }
 }
 
-
+// clears saved outfits by empting local storage 
 document.getElementById("clear-past").addEventListener('click', () => {
     localStorage.setItem("mC.outfits", "");
     window.location.reload();

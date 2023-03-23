@@ -22,9 +22,9 @@ if(localStorage.getItem("mC.items")!==null)
 
     for(let i =0; i < items.length; i++)
     {
-
-        this.img = document.createElement("img");
-        this.img.src= items[i];
+        
+        img = document.createElement("img");
+        img.src= items[i];
         src = document.getElementById("closet");
         src.appendChild(this.img); 
         console.log(img.src);
@@ -168,21 +168,22 @@ document.getElementById("add-card").addEventListener("click", event => {
 })
 
 /**
- * below code from: https://stackoverflow.com/questions/22087076/how-to-make-a-simple-image-upload-using-javascript-html
+ * help from https://www.youtube.com/watch?v=8K2ihr3NC40 
  */
+
 document.querySelector('input[type="file"]').addEventListener('change', function() {
     //event.preventDefault(); 
-    let path = document.getElementById("new-item"); 
-    let img = document.querySelector('img');
-    img.onload = () =>
-    {
-        URL.revokeObjectURL(img.src); 
-    }
-    img.src = URL.createObjectURL(this.files[0]);
-    console.log(img.src); 
-    items.push(img.src); 
-    localStorage.setItem("mC.items", JSON.stringify(items)); 
-    document.getElementById("closet").appendChild(img);
+    const reader = new FileReader();
+    reader.addEventListener("load", () =>{ 
+        let img = document.querySelector('img');
+        img.src = reader.result; 
+        document.getElementById("closet").appendChild(img);
+        items.push(img.src);
+        localStorage.setItem("mC.items", JSON.stringify(items)); 
+    })
+
+    reader.readAsDataURL(this.files[0]); 
+    
 })
 
 

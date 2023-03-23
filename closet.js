@@ -20,8 +20,10 @@ if(localStorage.getItem("mC.items")!==null)
     items = JSON.parse(localStorage.getItem("mC.items")); 
 
     /**
-     * code for adding images to doc from: 
+     * code for adding images based off of 
      * https://stackoverflow.com/questions/2735881/adding-images-to-an-html-document-with-javascript
+     * author: David Vassalo 
+     * date accessed: March 23, 2023
      */
 
     for(let i =0; i < items.length; i++)
@@ -179,8 +181,11 @@ document.getElementById("add-card").addEventListener("click", event => {
 
 
 /**
- * help from https://www.youtube.com/watch?v=8K2ihr3NC40 
+ * code for saving images to local storage based off of
+ * https://www.youtube.com/watch?v=8K2ihr3NC40 
  * 
+ * author: Dcode, Dom 
+ * date accessed: March 23, 2023
  * function takes the image file the user uploads and saves them to local storage
  */
 document.querySelector('input[type="file"]').addEventListener('change', function() {

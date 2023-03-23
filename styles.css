@@ -73,10 +73,40 @@ fieldset
     color: black; 
     
 }
-#ballet img, #basic img, #artsy img, #grunge img, #street img, #ballet-items img, #basic-items img, #grunge-items img, #artsy-items img, #street-items img, #big-closet img, #clothes img, #outfit img
+#ballet img, #basic img, #artsy img, #grunge img, #street img
 {
     height: 500px;
-    
+}
+
+#ballet-items img, #basic-items img, #grunge-items img, #artsy-items img, #street-items img
+{
+    height: 200px; 
+}
+
+
+#clothes input, #outfit img
+{
+    height: 250px; 
+}
+#closet img
+{
+    height: 300px
+}
+#opening
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 10% 10% 70%;
+}
+#opening-h, #opening-p1, #opening-p2
+{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+#big-closet
+{
+    grid-column-start:2;
+    grid-row-start: 1;
 }
 
 #next-butt
@@ -117,11 +147,6 @@ nav li:hover{
     background-color: darksalmon;
 }
 
-#closet-titles
-{
-    margin: 5%;
-}
-
 #closet, #clothes, #outfit
 {
     padding: 2%;
@@ -129,6 +154,7 @@ nav li:hover{
     outline-color: black;
     outline-width: 0.5em;
 }
+
 
 #two-buttons
 {
@@ -161,7 +187,7 @@ nav li:hover{
 
 #past-outfits img
 {
-    width: 200px; 
+    width: 100px; 
 }
 
 input 

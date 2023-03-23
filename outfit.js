@@ -29,9 +29,11 @@ for(let i = 0; i < buttons.length; i++)
         let image = e.target.id; 
 
         /**
-        * code for adding images to doc from: 
+        * code for adding images based off of 
         * https://stackoverflow.com/questions/2735881/adding-images-to-an-html-document-with-javascript
-        */
+        * author: David Vassalo 
+        * date accessed: March 23, 2023
+         */
 
         img = document.createElement("img");
         img.src = image;
@@ -92,6 +94,12 @@ if(!( localStorage.getItem("mC.outfits") === null))
         document.getElementById("past-outfits").appendChild(text);
         for(let i =0; i < pastouts[o].length; i++)
         {
+            /**
+             * code for adding images based off of 
+            * https://stackoverflow.com/questions/2735881/adding-images-to-an-html-document-with-javascript
+            * author: David Vassalo 
+            * date accessed: March 23, 2023
+            */
             img = document.createElement("img");
             img.src = pastouts[o][i];
             document.getElementById("past-outfits").appendChild(img); 

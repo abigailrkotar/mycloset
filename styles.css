@@ -116,3 +116,15 @@ nav li:hover{
     background-color: darksalmon;
 }
 
+#closet-titles
+{
+    margin: 5%;
+}
+
+#closet
+{
+    padding: 2%;
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 0.5em;
+}

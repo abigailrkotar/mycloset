@@ -33,93 +33,137 @@ if(localStorage.getItem("mC.items")!==null)
 
 document.getElementById("add-basic1").addEventListener("click", event => {
     event.preventDefault(); 
-    items.push(document.getElementById("b1").src);
-    localStorage.setItem("mC.items", JSON.stringify(items)); 
-    document.getElementById("closet").appendChild(document.getElementById("b1"));
+    if(! items.includes(document.getElementById("b1").src))
+    {
+        items.push(document.getElementById("b1").src);
+        localStorage.setItem("mC.items", JSON.stringify(items)); 
+        document.getElementById("closet").appendChild(document.getElementById("b1"));
+    }
     document.getElementById("add-basic1").style.display = 'none';
 })
 document.getElementById("add-bskirt").addEventListener("click", event => {
     event.preventDefault(); 
-    items.push(document.getElementById("black-skirt").src);
-    localStorage.setItem("mC.items", JSON.stringify(items)); 
-    document.getElementById("closet").appendChild(document.getElementById("black-skirt"));
+    if(! items.includes(document.getElementById("black-skirt").src))
+    {
+        items.push(document.getElementById("black-skirt").src);
+        localStorage.setItem("mC.items", JSON.stringify(items)); 
+        document.getElementById("closet").appendChild(document.getElementById("black-skirt"));
+    }
     document.getElementById("add-bskirt").style.display = 'none';
 })
 document.getElementById("add-bskirt1").addEventListener("click", event => {
     event.preventDefault(); 
-    items.push(document.getElementById("black-skirt1").src);
-    localStorage.setItem("mC.items", JSON.stringify(items)); 
-    document.getElementById("closet").appendChild(document.getElementById("black-skirt1"));
+    if(! items.includes(document.getElementById("black-skirt3").src))
+    {
+        items.push(document.getElementById("black-skirt1").src);
+        localStorage.setItem("mC.items", JSON.stringify(items)); 
+        document.getElementById("closet").appendChild(document.getElementById("black-skirt1"));
+    }
     document.getElementById("add-bskirt1").style.display = 'none';
 })
 document.getElementById("add-bskirt2").addEventListener("click", event => {
     event.preventDefault(); 
-    items.push(document.getElementById("black-skirt2").src);
-    localStorage.setItem("mC.items", JSON.stringify(items)); 
-    document.getElementById("closet").appendChild(document.getElementById("black-skirt2"));
+    if(! items.includes(document.getElementById("black-skirt3").src))
+    {
+        items.push(document.getElementById("black-skirt2").src);
+        localStorage.setItem("mC.items", JSON.stringify(items)); 
+        document.getElementById("closet").appendChild(document.getElementById("black-skirt2"));
+    }
+
     document.getElementById("add-bskirt2").style.display = 'none';
 })
 document.getElementById("add-bskirt3").addEventListener("click", event => {
     event.preventDefault(); 
-    items.push(document.getElementById("black-skirt3").src);
-    localStorage.setItem("mC.items", JSON.stringify(items)); 
-    document.getElementById("closet").appendChild(document.getElementById("black-skirt3"));
+    if(! items.includes(document.getElementById("black-skirt3").src))
+    {
+        items.push(document.getElementById("black-skirt3").src);
+        localStorage.setItem("mC.items", JSON.stringify(items)); 
+        document.getElementById("closet").appendChild(document.getElementById("black-skirt3"));
+    }
+
     document.getElementById("add-bskirt3").style.display = 'none';
 })
 document.getElementById("add-whitet").addEventListener("click", event => {
     event.preventDefault(); 
-    items.push(document.getElementById("white-tank").src);
-    localStorage.setItem("mC.items", JSON.stringify(items)); 
-    document.getElementById("closet").appendChild(document.getElementById("white-tank"));
+    if(! items.includes(document.getElementById("white-tank").src))
+    {
+        items.push(document.getElementById("white-tank").src);
+        localStorage.setItem("mC.items", JSON.stringify(items)); 
+        document.getElementById("closet").appendChild(document.getElementById("white-tank"));
+    }
     document.getElementById("add-whitet").style.display = 'none';
 })
 document.getElementById("add-whitet1").addEventListener("click", event => {
     event.preventDefault(); 
-    items.push(document.getElementById("white-tank1").src);
-    localStorage.setItem("mC.items", JSON.stringify(items)); 
-    document.getElementById("closet").appendChild(document.getElementById("white-tank1"));
+    if(! items.includes(document.getElementById("white-tank1").src))
+    {
+        items.push(document.getElementById("white-tank1").src);
+        localStorage.setItem("mC.items", JSON.stringify(items)); 
+        document.getElementById("closet").appendChild(document.getElementById("white-tank1"));
+    }
+    
     document.getElementById("add-whitet1").style.display = 'none';
 })
 document.getElementById("add-wrap").addEventListener("click", event => {
     event.preventDefault(); 
-    items.push(document.getElementById("wrap-top").src);
-    localStorage.setItem("mC.items", JSON.stringify(items)); 
-    document.getElementById("closet").appendChild(document.getElementById("wrap-top"));
+    if(! items.includes(document.getElementById("wrap-top").src))
+    {
+        items.push(document.getElementById("wrap-top").src);
+        localStorage.setItem("mC.items", JSON.stringify(items)); 
+        document.getElementById("closet").appendChild(document.getElementById("wrap-top"));
+    }
+    
     document.getElementById("add-wrap").style.display = 'none';
 })
 document.getElementById("add-jskirt").addEventListener("click", event => {
     event.preventDefault(); 
-    items.push(document.getElementById("jean-skirt").src);
-    localStorage.setItem("mC.items", JSON.stringify(items)); 
-    document.getElementById("closet").appendChild(document.getElementById("jean-skirt"));
+    if(! items.includes(document.getElementById("jean-skirt").src))
+    {
+        items.push(document.getElementById("jean-skirt").src);
+        localStorage.setItem("mC.items", JSON.stringify(items)); 
+        document.getElementById("closet").appendChild(document.getElementById("jean-skirt"));
+    }
     document.getElementById("add-jskirt").style.display = 'none';
 })
 document.getElementById("add-jskirt1").addEventListener("click", event => {
     event.preventDefault(); 
-    items.push(document.getElementById("jean-skirt1").src);
-    localStorage.setItem("mC.items", JSON.stringify(items)); 
-    document.getElementById("closet").appendChild(document.getElementById("jean-skirt1"));
+    if(! items.includes(document.getElementById("jean-skirt1").src))
+    {
+        items.push(document.getElementById("jean-skirt1").src);
+        localStorage.setItem("mC.items", JSON.stringify(items)); 
+        document.getElementById("closet").appendChild(document.getElementById("jean-skirt1"));
+    }
     document.getElementById("add-jskirt1").style.display = 'none';
 })
 document.getElementById("add-bjean").addEventListener("click", event => {
     event.preventDefault(); 
-    items.push(document.getElementById("baggy-jean").src);
-    localStorage.setItem("mC.items", JSON.stringify(items)); 
-    document.getElementById("closet").appendChild(document.getElementById("baggy-jean"));
+    if(! items.includes(document.getElementById("baggy-jean").src))
+    {
+        items.push(document.getElementById("baggy-jean").src);
+        localStorage.setItem("mC.items", JSON.stringify(items)); 
+        document.getElementById("closet").appendChild(document.getElementById("baggy-jean"));
+    }
     document.getElementById("add-bjean").style.display = 'none';
 })
 document.getElementById("add-bjean1").addEventListener("click", event => {
     event.preventDefault(); 
-    items.push(document.getElementById("baggy-jean1").src);
-    localStorage.setItem("mC.items", JSON.stringify(items)); 
-    document.getElementById("closet").appendChild(document.getElementById("baggy-jean1"));
+    if(! items.includes(document.getElementById("baggy-jean1").src))
+    {
+        items.push(document.getElementById("baggy-jean1").src);
+        localStorage.setItem("mC.items", JSON.stringify(items)); 
+        document.getElementById("closet").appendChild(document.getElementById("baggy-jean1"));
+    }
     document.getElementById("add-bjean1").style.display = 'none';
 })
 document.getElementById("add-card").addEventListener("click", event => {
     event.preventDefault(); 
-    items.push(document.getElementById("card").src);
-    localStorage.setItem("mC.items", JSON.stringify(items)); 
-    document.getElementById("closet").appendChild(document.getElementById("card"));
+    if(! items.includes(document.getElementById("card").src))
+    {
+        items.push(document.getElementById("card").src);
+        localStorage.setItem("mC.items", JSON.stringify(items)); 
+        document.getElementById("closet").appendChild(document.getElementById("card"));
+    }
+    
     document.getElementById("add-card").style.display = 'none';
 })
 

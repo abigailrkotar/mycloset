@@ -14,14 +14,14 @@ for(let i =0; i < clothes.length; i++)
     buttons.push(button); 
 }
 
-let curroutfit = []; 
+let curroutfit = [];; 
 
 for(let i = 0; i < buttons.length; i++)
 {
     document.getElementById("clothes").appendChild(buttons[i]);
     buttons[i].addEventListener("click", (e) => {
         let image = e.target.id; 
-        
+
         /**
         * code for adding images to doc from: 
         * https://stackoverflow.com/questions/2735881/adding-images-to-an-html-document-with-javascript
@@ -33,6 +33,32 @@ for(let i = 0; i < buttons.length; i++)
         document.getElementById("outfit").appendChild(img);
         document.getElementById(image).style.display = 'none'; 
         curroutfit.push(img.src); 
+        console.log(curroutfit);
     })
 
 }
+
+document.getElementById("love").addEventListener("click", () => {
+    event.preventDefault(); 
+    if(localStorage.getItem("mC.outfits") === null)
+    {
+        console.log(curroutfit);
+        localStorage.setItem("mC.outfits", JSON.stringify(curroutfit)); 
+    }
+    else
+    {
+        let outfits = [];
+        outfits.push(JSON.parse(localStorage.getItem("mC.outfits")));
+        console.log(outfits); 
+        outfits.push(curroutfit); 
+        console.log(outfits); 
+        localStorage.setItem("mC.outfits", JSON.stringify(outfits)); 
+    }
+    curroutfit = []; 
+    window.location.reload(); 
+})
+
+document.getElementById("scrap").addEventListener("click", () => {
+    curroutfit = []; 
+    window.location.reload(); 
+})

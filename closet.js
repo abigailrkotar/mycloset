@@ -1,14 +1,18 @@
+//hides all items
 document.getElementById("ballet-items").style.display = 'none';
 document.getElementById("basic-items").style.display = 'none';
 document.getElementById("artsy-items").style.display = 'none';
 document.getElementById("grunge-items").style.display = 'none';
 document.getElementById("street-items").style.display = 'none'; 
 
+//displays the items based on user's style from quiz
 if(localStorage.getItem("mC.style")!==null)
 {
     let string = localStorage.getItem("mC.style")+"-items"; 
     document.getElementById(string).style.display = 'block';
 }
+
+//if the user has a presaved closet, it loads it up 
 let items = [];
 if(localStorage.getItem("mC.items")!==null)
 {
@@ -30,6 +34,8 @@ if(localStorage.getItem("mC.items")!==null)
         console.log(img.src);
     }
 }
+
+//on clicks for buttons that add items to closet
 
 document.getElementById("add-basic1").addEventListener("click", event => {
     event.preventDefault(); 
@@ -167,10 +173,16 @@ document.getElementById("add-card").addEventListener("click", event => {
     document.getElementById("add-card").style.display = 'none';
 })
 
+
+
+
+
+
 /**
  * help from https://www.youtube.com/watch?v=8K2ihr3NC40 
+ * 
+ * function takes the image file the user uploads and saves them to local storage
  */
-
 document.querySelector('input[type="file"]').addEventListener('change', function() {
     //event.preventDefault(); 
     const reader = new FileReader();

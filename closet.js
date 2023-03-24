@@ -16,7 +16,6 @@ if(localStorage.getItem("mC.style")!==null)
 let items = [];
 if(localStorage.getItem("mC.items")!==null)
 {
-    document.getElementById("no-items").style.display = 'none'; 
     items = JSON.parse(localStorage.getItem("mC.items")); 
 
     /**

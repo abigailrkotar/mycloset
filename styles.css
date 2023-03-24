@@ -73,6 +73,12 @@ fieldset
     color: black; 
     
 }
+
+#closet-titles
+{
+    padding-bottom: 5%;;
+}
+
 #ballet img, #basic img, #artsy img, #grunge img, #street img
 {
     height: 500px;

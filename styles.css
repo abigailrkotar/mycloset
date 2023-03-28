@@ -7,7 +7,7 @@ body
     text-align: center;
 }
 
-#content-area, #content-area1
+header
 {
     background-color: white;
 
@@ -98,15 +98,27 @@ fieldset
 {
     height: 300px
 }
-#opening
+#content-area2
 {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 10% 10% 10% 70%;
+    grid-template-rows: 10% 10% 10% 10% 10% 50%;
     grid-column-start: 1;
     grid-column-end: 2;
 }
-#opening-h, #opening-p1, #opening-p2
+#closet-h
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end:2;
+}
+#closet-nav
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#opening
 {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -114,7 +126,14 @@ fieldset
 #big-closet
 {
     grid-column-start:2;
-    grid-row-start: 1;
+    grid-column-end:3;
+    margin-right: 5vh; 
+}
+#actual-closet
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
 }
 
 #next-butt
@@ -189,8 +208,7 @@ nav li:hover{
 
 #past-outfits
 {
-    grid-column-start: 2;
-
+    grid-column-start: 3;
 }
 
 #past-outfits img

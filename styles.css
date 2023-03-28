@@ -66,7 +66,7 @@ fieldset
     color: slategray
 }
 
-#ballet, #basic, #artsy, #grunge, #street
+.result
 {
     text-align: center; 
     font-size: larger;
@@ -79,7 +79,7 @@ fieldset
     padding-bottom: 5%;;
 }
 
-#ballet img, #basic img, #artsy img, #grunge img, #street img
+.result img
 {
     height: 500px;
 }

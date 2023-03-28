@@ -7,11 +7,18 @@ body
     text-align: center;
 }
 
-header, .content, #closet, #past-outfits, #curr-outfit
+header, .content, #closet, #past-outfits, #two-buttons, #outfit, #clothes 
 {
     background-color: white;
-
 }
+
+.content, #closet, #past-outfits, #outfit, #clothes
+{
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 0.5em;
+}
+
 
 header
 {
@@ -163,12 +170,9 @@ nav li:hover{
     background-color: darksalmon;
 }
 
-#closet, #clothes, #outfit, #past-outfits
+#closet, #clothes, #outfit, #past-outfits, #two-buttons
 {
-    padding: 2%;
-    outline-style: solid;
-    outline-color: black;
-    outline-width: 0.5em;
+    padding: 5em;
 }
 
 
@@ -181,6 +185,8 @@ nav li:hover{
 #two-buttons
 {
     padding: 2%;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 #header-outfit
@@ -194,14 +200,9 @@ nav li:hover{
 {
     grid-column-start: 1;
     grid-column-end: 3;
-}
-
-#curr-outfit
-{
-    grid-row-start: 3;
-    grid-row-end: 5; 
-    grid-column-start: 1;
-    grid-column-end: 2; 
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding-bottom: 20%;
 }
 
 #past-outfits

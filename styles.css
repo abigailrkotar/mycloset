@@ -84,7 +84,7 @@ fieldset
     height: 500px;
 }
 
-#ballet-items img, #basic-items img, #grunge-items img, #artsy-items img, #street-items img
+.suggestions img
 {
     height: 200px; 
 }

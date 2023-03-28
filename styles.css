@@ -7,7 +7,7 @@ body
     text-align: center;
 }
 
-header, .content, #closet
+header, .content, #closet, #past-outfits, #curr-outfit
 {
     background-color: white;
 
@@ -163,7 +163,7 @@ nav li:hover{
     background-color: darksalmon;
 }
 
-#closet, #clothes, #outfit
+#closet, #clothes, #outfit, #past-outfits
 {
     padding: 2%;
     outline-style: solid;
@@ -172,39 +172,53 @@ nav li:hover{
 }
 
 
-
+#content-area1
+{
+    display: grid;
+    grid-template-columns: 75% 25%; 
+    grid-template-rows: 5% 5% 10% 80%;
+}
 #two-buttons
 {
     padding: 2%;
 }
 
-#content-area1
+#header-outfit
 {
-    display: grid;
-    grid-template-columns: 75% 25%;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
-
-#outfit-nav, #header-outfit
+#outfit-nav
 {
     grid-column-start: 1;
     grid-column-end: 3;
 }
 
-#two-buttons, #outfit, #clothes
+#curr-outfit
 {
+    grid-row-start: 3;
+    grid-row-end: 5; 
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 2; 
 }
 
 #past-outfits
 {
-    grid-column-start: 3;
+    grid-row-start: 4;
+    grid-row-end: 5; 
+    grid-column-start: 2;
+    grid-column-end: 3; 
+    max-height: 100%;
 }
+
 
 #past-outfits img
 {
     width: 100px; 
 }
+
 
 input 
 {

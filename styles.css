@@ -12,7 +12,7 @@ header, .content, #closet, #past-outfits, #two-buttons, #outfit, #clothes
     background-color: white;
 }
 
-.content, #closet, #past-outfits, #outfit, #clothes
+.content, #closet, #past-outfits, #outfit, #clothes, #two-buttons
 {
     outline-style: solid;
     outline-color: black;
@@ -207,11 +207,10 @@ nav li:hover{
 
 #past-outfits
 {
-    grid-row-start: 4;
+    grid-row-start: 3;
     grid-row-end: 5; 
     grid-column-start: 2;
     grid-column-end: 3; 
-    max-height: 100%;
 }
 
 
